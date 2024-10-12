@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/button_colour_home"/> <!-- Change color as needed -->
-    <corners android:radius="35dp"/> <!-- Half of the width/height to make it a circle -->
-</shape>
