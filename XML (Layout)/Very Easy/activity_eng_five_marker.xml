@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngFiveMarker">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/english_analysis_textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/IntroHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Introduction"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/OpeningPara"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="The 5 marker, is a unique question which appears every year at the very end of the
+RUAE paper, which essentially asks you to compare the two passages given to you, and point out either the similarities or
+ differences, depending on the question asked, using an appropriate quote from both passages. For example, it may ask
+&quot;Using both passages given, identify three key areas on which they agree. You should support the points you make by referring to important ideas in both
+ passages&quot;" />
+
+            <TextView
+                android:id="@+id/ExplanationHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Explanation"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/ExplanationMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="To best answer these questions, we should first read both passages thoroughly, and decide on
+ a key idea they agree/disagree on(depending on the question). We should then quote two pieces of evidence for our point,
+ and explain how they show their agreement/disagreement. We will then do this 3 times in total to maximise our chances for the
+ full 5 marks." />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="5 Marker"
+        android:textColor="@color/rec_title_colour_english"
+        android:fontFamily="@font/josefinsans_medium"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

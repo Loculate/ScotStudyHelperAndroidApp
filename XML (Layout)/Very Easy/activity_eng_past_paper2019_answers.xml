@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngPastPaper2019Answers">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PassageOneHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Answers"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/PassageOneMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="1. By refering to paragraph 1, state how the writer's use of language conveys the importance of free speech.(4 Marks)
+&#10;&#10;⦁	The writer's use of word choice in &quot;fundamental right&quot; conveys the significance of free speech in the modern world. &quot;fundamental&quot; has connotations of essential or crucial, which demonstrates the importance of free speech.
+&#10;&#10;⦁	Word choice in &quot;cornerstone of democratic societies&quot; depicts the large role free speech has in retaining a democratic society. &quot;cornerstone&quot; connotes of large significance or meaning, which displays the importance of free speech.
+&#10;&#10;⦁	In &quot;enshrined in the constitutions of many nations&quot; word choice is used to show how free speech will forever be of importance in lots of societies. &quot;enshrined&quot; lets us infer immortalised or preserved, which exhibits the fact that free speech is so significant that it will always play a main role in fostering a fair civilisation.
+&#10;&#10;⦁	The writer uses word choice in &quot;promoting intellectual growth&quot; to demonstrate the positive impacts free speech can have, clarifying it's signficance. &quot;promote&quot; has connotations of encourage or to motivate, which depicts the rational and critical thinking that free speech brings to people, cementing its importance in a just society.
+&#10;&#10;⦁	The writer's word choice in &quot;facilitating societal progress&quot; conveys the favorable effects that can come from free speech. &quot;facilitating&quot; connotes assisting or helping, which suggests free speech plays a big role in bettering of many societies.
+&#10;&#10;⦁	Any other reasonable response.
+
+
+&#10;&#10;&#10;2. Using your own words, refering to paragraph 2, explain recent developments on college campuses that have led to debates about free speech.(3 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;Instances of speech censorship&quot;,
+&#10;&#10;⦁	&quot;safe spaces&quot;,
+&#10;&#10;⦁	&quot;disinvitation of controversial speakers&quot;.
+
+
+&#10;&#10;&#10;3. Using your own words, explain what the author says about the potential negative impact of shielding students from controversial ideas in paragraph 3. (3 marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;does not prepare them for the real world&quot;,
+&#10;&#10;⦁	&quot;the essence of higher education lies in challenging existing beliefs and encouraging critical thinking&quot;,
+&#10;&#10;⦁	&quot;any form of censorship, no matter how well-intentioned, stifles this intellectual growth&quot;.
+
+
+&#10;&#10;&#10;4. Referring to paragraph 4, explain how the writer’s use of language emphasizes the potential positives that could come from speech censorship. (4 Marks)
+&#10;&#10;⦁	Word choice in &quot;forms of speech can create a hostile environment for marginalized groups&quot; conveys the potential negatives of permitting free speech. &quot;hostile&quot; has connotations of aggressive or unfriendly, which depicts the belligerent environment that free speech can create.
+&#10;&#10;⦁	The writer uses word choice in &quot;infringing on their right to a safe and inclusive educational experience&quot; to display how allowing free speech may be harming the experience of others. &quot;infringing&quot; connotes violating or breaching, which demonstrates the potentially invasive nature of free speech.
+&#10;&#10;⦁	Imagery in &quot;that freedom of speech should not be used as a shield for hate speech or discrimination&quot; explains that people can use free speech as a guise for bigotry and discrimiation. Just as a shield blocks something from effecting the user, so to could endorsing free speech lead to people using it as cover and protection from scrutiny and criticism.
+&#10;&#10;⦁	In &quot;create an environment where all students feel valued and respected&quot; word choice is used to express the potential downsides of free speech on college campuses. &quot;valued&quot; and &quot;respected&quot; have connotations of appreciated or cherished, which alludes to the fact the free speech could create an environment where people are devalued or dehumanised.
+&#10;&#10;⦁	Any other reasonable response.
+
+
+&#10;&#10;&#10;5. Referring to paragraph 5, using your own words, explain why the issue is so nuanced and colleges struggle to come to a solution. (3 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;balance between individual rights and collective welfare&quot;,
+&#10;&#10;⦁	&quot;tension between freedom and security, so too do college campuses struggle to reconcile the right to free speech with the need for inclusivity&quot;,
+&#10;&#10;⦁	&quot;This tension is further exacerbated by the rise of social media, which has amplified the reach and impact of speech, blurring the lines between public and private discourse.&quot;.
+
+&#10;&#10;&#10;6. Refering to the conclusion, using your own words, state the main goals of free speech.(4 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;the goal should not be to silence dissenting voices&quot;,
+&#10;&#10;⦁	&quot;foster a culture of respect and understanding&quot;,
+&#10;&#10;⦁	&quot;diverse perspectives can coexist and enrich our collective discourse.&quot;,
+&#10;&#10;⦁	&quot;It is precisely through engaging with such complexities that society can hope to progress&quot;.
+
+
+&#10;&#10;&#10;7. Explain how the writer's use of language in the conclusion links back to the text as a whole.(4 Marks)
+&#10;&#10;⦁	The word choice in &quot;complex issue&quot; links back to the earlier point that finding an effective solution is very difficult. &quot;complex&quot; has connotations of intricate or complicated, which relates back to an earlier argument and makes the passage feel more connected as a whole.
+&#10;&#10;⦁	In &quot;diverse perspectives&quot; word choice is used to refer back to the idea that free speech can expose a whole new world of beliefs and ideas. &quot;diverse&quot; connotes different or varied, which strengthens the earlier point that we should allow free speech in order to keep a wide range of beliefs
+&#10;&#10;⦁	Word choice in &quot;should not be to silence dissenting voices connects back to the idea that not permitting free speech hinders the possiblity for new ideas and perspectives to emerge. &quot;silence&quot; suggests to quiet or suppress, which displays the possible negative consequences of forbiding freedom of speech, which relates back to an earlier point in the passage.
+&#10;&#10;⦁	The writer's use of word choice in &quot;foster a culture of respect and understanding&quot; emphasizes the importance of kindness compassion, which is in line with the broader theme of promoting open dialogue and critical thinking on college campuses. &quot;respect&quot; connotes appreciation or consideration, and &quot;understanding&quot; connotes comprehension or recognition, which refers back to the prior argument that permitting people to speak on new ideas and beliefs can bring enlightenment to society as a whole.
+&#10;&#10;⦁	Any other reasonable response.
+
+
+&#10;&#10;&#10;8.Look at both passages.
+&#10;&#10;Both writers have different viewpoints on if free speech should be permitted in college.
+&#10;&#10;Identify three key areas on which they agree. You should support the points you make by referring to important ideas in both passages.(5 Marks)
+
+&#10;&#10;&#10;⦁	Freedom of speech is a fundamental right: Both passages acknowledge the importance of freedom of speech as a fundamental right.
+
+&#10;&#10;Passage 1: &quot;Freedom of speech is a fundamental right, enshrined in the constitutions of many nations.&quot; explicitly states that freedom of speech is a foundational aspect of democratic societies.
+
+&#10;&#10;Passage 2: &quot;Freedom of speech is a fundamental right, deeply rooted in the democratic ethos of many nations.&quot; tells us of the significance of free speech in fair and just societies.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Recognition of complexity and need for balance: Both passages acknowledge the complexity of the issue and the need to balance freedom of speech with other considerations such as inclusivity and safety.
+
+&#10;&#10;Passage 1: &quot;The debate over freedom of speech on college campuses is a reflection of broader societal tensions. It is a complex issue with no easy solutions.&quot; recognises the nuanced nature of the debate and the difficulty in finding the right balance between protecting free speech and ensuring a safe and inclusive environment on college campuses.
+
+&#10;&#10;Passage 2: &quot;The challenge, of course, lies in determining where these boundaries should be set. Too restrictive, and the risk is a stifling of free speech and intellectual growth. Too lax, and the risk is a hostile and unsafe environment for certain groups of students.&quot; acknowledges the complicated nature of the debate.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Recognition of the duty of colleges and universities to protect students: Both passages recognize that colleges and universities have a responsibility to protect their students, including protecting them from harm related to speech.
+
+&#10;&#10;Passage 1: &quot;They assert that colleges have a duty to protect their students from harm, even if it means imposing certain restrictions on speech.&quot; emphasises the obligation of educational institutions to ensure the safety and well-being of their students, which can include setting boundaries on speech when necessary.
+
+&#10;&#10;Passage 2: &quot;Colleges and universities have a duty to protect their students from such harm. This duty extends beyond the physical safety of students to include their psychological and emotional well-being.&quot; demonstrates the fact that all learning grounds have the responsablitity to guard their students.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Acknowledgment of the need for respectful dialogue: Both passages agree on the importance of fostering a culture of respect and understanding in the discussion of sensitive topics on college campuses.
+
+&#10;&#10;Passage 1: &quot;As we navigate this issue, it is crucial to remember that the goal should not be to silence dissenting voices, but to foster a culture of respect and understanding...&quot; states the importance of engaging in respectful dialogue and creating an environment where diverse perspectives can coexist without fear of harassment or discrimination.
+
+&#10;&#10;Passage 2: &quot;This is not about stifling intellectual growth or debate, but rather about ensuring that all students, regardless of their background or identity, can participate in these debates without fear of harassment or discrimination.&quot; agrees that people of all identities and beliefs should be cherished and respected.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+            " />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Paper Two Answers"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

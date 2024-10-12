@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngTenMarker">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="10 Marker"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/english_analysis_textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TenMarkerNotesHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Introduction"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/OpeningPara"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="The ten marker will appear only in the critical
+ reading section of the exam, however it is worth 25% of that paper, so it is very important to practice it.
+ To answer 10 marker questions, we can use the simple formula: &#10;&#10;Commonality (2 Marks)&#10;This Extract/Poem(2 Marks)
+&#10;Other Extract/Poem(6 Marks)"/>
+
+            <TextView
+                android:id="@+id/CommonalityHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Commmonality"
+                android:layout_marginTop="3dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/CommonalityMainHeader"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="To begin the 10 marker, we start with commonality, which is linking the current Poem/Extract
+ to another that you have learned. You will need to try and think of another poem/extract which is closely related to the
+question at hand, for example it may ask us to discuss &quot;How does the writer use contrast to explore central concerns&quot;, in which cases we would want
+to use a poem/extract where this is well demonstrated.&#10;&#10;Once we have selected an appropriate poem/extract, we will state how that
+effect links to the poem/extract infront of you, and the other one that you decided on. Then we will explain how the poem/extract
+achieves this effect through is language techniques. Here is an example below:&#10;&#10;In Assisi by Norman Maccaig, the contrast between
+the luxurious church and the abandoned beggar is used to explore the central concern of the hypocrisy of the church."/>
+
+            <TextView
+                android:id="@+id/ThisPoemHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="This Poem/Extract"
+                android:layout_marginTop="3dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/ThisPoemMainHeader"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="The second part of the question, worth 2 marks, is the part where we analyse the use of language from
+ the poem/extract given to you, and then link it back to the question being asked. If you are unsure how achieve this, make sure to review the
+ &quot;Analysis Page&quot; in the previous page."/>
+
+            <TextView
+                android:id="@+id/OtherPoemHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Other Poem/Extract"
+                android:layout_marginTop="3dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/OtherPoemMainHeader"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="The final, and most difficult part of the question, is when you have to answer 6 marks worth of questions
+ solely of memory. You will have to use at least one quote from the selected poem/extract stated earlier and analyse the writer's use of language, just as before,
+ however this time you will have to remember the quotes as they will not be infront of you."/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

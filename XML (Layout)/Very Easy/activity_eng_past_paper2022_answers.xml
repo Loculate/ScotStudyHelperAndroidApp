@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngPastPaper2022Answers">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PassageOneHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Answers"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/PassageOneMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="1. By refering to the writer's use of langauge, explain how it is made clear children are now active members in the world of marketing.(3 Marks)
+&#10;&#10;⦁	The writer's use of word choice in &quot;not merely innocent bystanders&quot; suggests children are now deeply involved in the advertising scene. &quot;bystander&quot; has connotations of spectator or observer, which signifies that now children are no longer outside the reach of marketers, but are within their grasp.
+&#10;&#10;⦁	In &quot;they are active participants in the marketplace&quot; word choice is used to demonstrate the large role that children play in the marketplace of today. &quot;active&quot; connotes involved, which depicts the commercial viability of children in marketing schemes.
+&#10;&#10;⦁	The word choice in &quot;their gaze has shifted toward the youngest members of society&quot; highlights how children are now starting to being directly targeted by online marketers. &quot;gaze&quot; suggests focus or attention, which depicts how companies are now dedicating specific resources towards child adverstising, making it clear that children are now active members in the world of marketing.
+&#10;&#10;⦁	Any other reasonable response.
+
+&#10;&#10;&#10;2. Using your own words, summarize the main argument presented in paragraph 2 regarding the significance of children as consumers in the modern-day.(4 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;constitute a significant demographic for marketers&quot;,
+&#10;&#10;⦁	&quot;They wield influence over their parents’ buying decisions&quot;,
+&#10;&#10;⦁	&quot;and their substantial purchasing power extends beyond the candy aisle&quot;,
+&#10;&#10;⦁	&quot;As family sizes shrink, dual incomes rise, and parents delay having children, disposable income flows more freely. The result? An army of pint-sized consumers ready to conquer the toy store, the cereal aisle, and the latest gadget display.&quot;.
+
+
+&#10;&#10;&#10;3. Refer to paragraph 3. Identify language techniques used by the writer to emphasise the impact of marketing on children's future purchasing habits.(4 marks)
+&#10;&#10;⦁	Word choice in &quot;not just about immediate sales&quot; emphasies the future potential that children have in the marketplace. &quot;immediate&quot; has connotations of now, or currently, which illustrates how marketers target children for the long game, so that when they grow older they will buy their products.
+&#10;&#10;⦁	In &quot;children are future adult customers&quot; word choice is used to demonstrate the marketers target towards prospects further down the line rather than ones that are happening right now. &quot;future&quot; connotes later, or time to come, which conveys the fact that marketing is aimed at children from a young age to shape their buying decisions at a later date.
+&#10;&#10;⦁	The writer uses word choice in &quot;young minds develop brand loyalty and purchasing habits early on&quot; to display why marketers direct their focus on children from such a young age. &quot;loyalty&quot; suggests allegiance or devotion, and &quot;habit&quot; suggests without thinking or like second nature, which explains why child marketing schemes are so effective, and consequently why they can so easily they can manipulate their targets purchasing habits.
+&#10;&#10;⦁	The imagery in &quot;cementing their preferences for years to come&quot; helps to express why children are targeted at such a young age. Just as cement dries very fast, and becomes extremely tough to shape or change, so too can childrens beliefs and loyalties to brands be immovable and unchangeable when set from so early on.
+&#10;&#10;⦁	The writer's use of word choice in &quot;cultivating a partnership with young consumers becomes a strategic move&quot; demonstrates the importance of forming a beneficial relationship with the younger consumers. &quot;strategic&quot; has connotations of benficial or advantageous, which signifies why young people are often targeted by these marketing strategies.
+&#10;&#10;⦁	Any other reasonable response
+
+
+&#10;&#10;&#10;4. In paragraph 4, summarize the authors main arguments against child marketing schemes.(3 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;Children under the age of 7 or 8 lack the cognitive ability to discern the persuasive intent of advertisements&quot;,
+&#10;&#10;⦁	&quot;To them, commercials are not sales pitches; they are unfiltered truths&quot;,
+&#10;&#10;⦁	&quot;Exploiting this innocence for profit raises many ethical questions.&quot;.
+
+
+
+&#10;&#10;&#10;5. In paragraph 5, explain how the writer uses language to create a negative tone.(3 Marks)
+&#10;&#10;⦁	The word choice in &quot;children internalize these materialistic values.&quot; helps to create a negative tone and continues the writer's argument against child marketing. &quot;materialistic&quot; has connotations of greedy or consumeristic, which highlights the damaging effect marketing to children has, giving the passage a negative tone.
+&#10;&#10;⦁	The writer's use of word choice in &quot;The pursuit of the next toy or gadget overshadows simpler joys like playing in the park or reading a book.&quot; displays the detrimental consequences that these marketing schemes are having. &quot;overshadow&quot; connotes dimish or upstage, which suggests children are now stuggling to enjoy more elementary, mundane pleasures, which creates a negative and critical tone for the passage.
+&#10;&#10;⦁	The authors use of a rhetorical question in &quot;What does this say about our societal priorities in the modern day?&quot; outlines the questionable practises of the advertisers. This helps to create a negative/critical tone around the topic of advertising to children.
+&#10;&#10;⦁	Any other reasonable response
+
+
+
+&#10;&#10;&#10;6. How does the writer's use of language in paragraph 6 highlight the rising problem of children's diets?(4 Marks)
+&#10;&#10;⦁	The writer uses word choice in &quot;shapes young children’s food preferences&quot; to convey the strong influence marketing holds over the diets of children. &quot;shapes&quot; has connotations of change or alter, which outlines the problem with advertisers being able to target children, as they are easily moulded.
+&#10;&#10;⦁	In &quot;Rising childhood obesity rates&quot; word choice is used to demonstrate the increasing problem of overweight children, suggesting it is the result of advertising unhealthy food to children. &quot;rising&quot; connotes growing or escalating which conveys how the problem is only getting worse, and displays the harmful effect that child marketing has on the children.
+&#10;&#10;⦁	The writer's use of word choice in &quot;hooked on empty calories&quot; emphasises the unhealthiness of the food being promoted, and also the strong dependence children now feel towards it. &quot;hooked&quot; suggests addicted or obsessed, which exhibits the dangers of allowing marketers to target children, and how it creates problems in their diets.
+&#10;&#10;⦁	The rhetorical question in &quot;Are we sacrificing our children’s health at the altar of profit?&quot; highlights the dubious nature of adversising towards children. This exemplifies the destructive implications of the topic as a whole.
+&#10;&#10;⦁	Any other reasonable response
+
+
+&#10;&#10;&#10;7. State how the writer's use of language in the conclusion effectively links back to the main argument as a whole.(4 Marks)
+&#10;&#10;⦁	The writer uses imagery in &quot;marketing to children is a tightrope walk&quot; to depict the caution we must exert when dealing with children, and their indoctrination from advertisers . Just as at any moment you can fall off a tightrope, spiraling into an abyss below, so too can the safety of children dramatically decrease if we don't draw a line for these marketers. This links back to the main argument that in a perfect world, children should be more shielded from advertising.
+&#10;&#10;⦁	Word choice in &quot;safeguard childhood’s purity.&quot; conveys that measures should be put in place to protect children from marketing at such a young age. &quot;safeguard&quot; has connotations of shield or defend, which relates back to the central argument that children should not overrun with brand propaganda so early on in their lives.
+&#10;&#10;⦁	The rhetorical question in &quot;What legacy are we leaving for the next generation? &quot; emphasises the questionable nature of allowing advertisers to run free with no restrictions. This connects back to the main point in the passage that we should protect children more from malicious marketers trying to target them.
+&#10;&#10;⦁	In &quot;they deserve more than just catchy jingles and colorful packaging&quot; the use of word choice helps to support the idea that children should be more protected and less targeted from ignorant advertisers. &quot;deserve&quot; connotes to be worthy of or to merit, which conveys the writer's opinion that children should be entitled to more protection regarding advertising, which ties back to the main argument of the passage as a whole.
+&#10;&#10;⦁	Any other reasonable response
+
+
+&#10;&#10;&#10;8.Look at both passages.
+&#10;Both writers viewpoints differ on the subject of child marketing.
+&#10;Identify three key areas on which they disagree. You should support the points you make by referring to important ideas in both passages.(5 Marks)
+
+&#10;&#10;&#10;⦁	Perspective on Marketing to Children:
+
+&#10;&#10;Passage 1 presents a critical view of marketing to children, highlighting its negative implications such as materialism and health issues.
+
+&#10;&#10;Passage 2 adopts a more neutral stance, viewing marketing to children as a necessary aspect of economic activity and suggesting that it can empower children and bridge gaps in society.
+
+&#10;&#10;Quote from Passage 1: &quot;Exploiting this innocence for profit raises many ethical questions.&quot; reflects Passage 1's concern about the ethical implications of marketing to children, indicating a negative perspective.
+
+&#10;&#10;Quote from Passage 2: &quot;Marketing to children is akin to sowing seeds in fertile soil.&quot; portrays marketing to children in a positive light, likening it to a beneficial process that nurtures growth.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Impact of Marketing on Childhood:
+
+&#10;&#10;Passage 1 emphasizes the negative impact of marketing on childhood, suggesting that it leads to materialistic values, overshadowing simpler joys, and contributing to rising childhood obesity rates.
+
+&#10;&#10;Passage 2 acknowledges ethical concerns but focuses more on the positive aspects of marketing, suggesting that responsible marketing can empower children and teach critical thinking.
+
+&#10;&#10;Quote from Passage 1: &quot;Possessions become markers of status and happiness. The pursuit of the next toy or gadget overshadows simpler joys like playing in the park or reading a book.&quot; illustrates Passage 1's perspective on how marketing influences children to prioritize material possessions over simple joys.
+
+&#10;&#10;Quote from Passage 2: &quot;Responsible marketing can empower children, teaching critical thinking and media literacy.&quot; suggests that marketing can have positive outcomes by empowering children with critical thinking skills, contrasting with the negative effects mentioned in Passage 1.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Role of Marketing in Society:
+
+&#10;&#10;Passage 1 raises concerns about the societal priorities shaped by marketing, questioning whether it prioritizes profit over children's well-being.
+
+&#10;&#10;Passage 2 emphasizes the role of marketing in bridging gaps in society and suggests that it mirrors societal values and aspirations.
+
+&#10;&#10;Quote from Passage 1: &quot;What does this say about our societal priorities in the modern day?&quot; questions the societal implications of marketing, suggesting a concern about its impact on societal values.
+
+&#10;&#10;Quote from Passage 2: &quot;Marketing to children, like a spider weaving its web, shapes society’s fabric.&quot; portrays marketing as a force that shapes society, indicating a perspective that views marketing as reflective of societal values rather than solely profit-driven.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Ethical Considerations of Marketing to Children:
+
+&#10;&#10;Passage 1 highlights ethical concerns regarding marketing to children, particularly regarding the exploitation of their innocence and the potential negative impact on their health and well-being.
+
+&#10;&#10;Passage 2 acknowledges ethical dilemmas but focuses more on the positive aspects of marketing, such as bridging gaps in society and empowering children.
+
+&#10;&#10;Quote from Passage 1: &quot;Exploiting this innocence for profit raises many ethical questions.&quot; expresses concern about the ethical implications of marketing to children, suggesting a negative perspective on the practice.
+
+&#10;&#10;Quote from Passage 2: &quot;Critics argue that marketing to children exploits their innocence, transforming them into unwitting brand ambassadors.&quot; acknowledges the ethical critique of marketing to children but presents it as a perspective of critics rather than as a central concern.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+            " />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Paper Three Answers"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

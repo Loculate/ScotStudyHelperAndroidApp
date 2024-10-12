@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngPastPaper2018Answers">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PassageOneHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Answers"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/PassageOneMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="1. By referring to at least two examples of imagery, analyse how the writer’s language suggests there is a lot of disagreeing on the internet in the first paragraph.(2 Marks)
+
+&#10;&#10;⦁	Imagery in &quot;battleground&quot; suggests that that you need to really fight to argue a point in the internet. Just as a battleground is a violent and has very little to no rules, so too are the bounds of the internet ruthless and chaotic.
+&#10;&#10;⦁	The author uses imagery in &quot;virtual agora&quot; to show the large amount of differing opinions there are in the internet space. Just as an agora is a bustling gathering place with differing people and differing cultures, so too is the internet an extremely crowded place where various extreme ideas and beliefs surface. This supports the idea of it being hard to come to a general consesus on the internet.
+&#10;&#10;⦁	Any other reasonable response.
+
+&#10;&#10;&#10;2. Using your own words, identify two points the writer makes about why some may argue internet censorship is neccesary in the second paragraph.(3 Marks)
+
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;safeguard societal norms&quot; ,
+&#10;&#10;⦁	&quot;protect vulnerable populations&quot;,
+&#10;&#10;⦁	&quot;maintain order in an increasingly interconnected world&quot;,
+&#10;&#10;⦁	&quot;dissemination of harmful content&quot;.
+
+
+
+&#10;&#10;&#10;3. Analyse how the writer uses language to convey their opinion on internet censorship in paragraph 3.(4 marks)
+
+&#10;&#10;⦁	Word choice in &quot;profound concerns&quot; outlines the writer's negative opinion about potential content censorship. &quot;concern&quot; has connotations of worry, which suggests the writer is not in support of inter censorship.
+&#10;&#10;⦁	The writer uses word choice in &quot;betray&quot; to highlight the damage internet censorship would cause to humanity. &quot;betray&quot; connotes backstabbed or decieved, which depicts the writer's hatred for overbearing regulations.
+&#10;&#10;⦁	In &quot;erosion&quot;, word choice is used to convey the negative impact internet censorship would have on humanity. &quot;erosion&quot; lets us infer decay or degradation, which outlines the writer's disapproval of internet censorship.
+&#10;&#10;⦁	Imagery in &quot;ensnared in a web of regulation and control&quot; illustrates the idea that rules and regulations involved with the internet could be controlling and overbearing. Just as a web is designed to capture, and imprison things, so too does the writer feel censorship would make navigating the web frustrating and difficult.
+&#10;&#10;⦁	Any other reasonable response.
+
+
+&#10;&#10;&#10;4. Explain fully the writer’s reasons for having objections against internet censorship in paragraph 4. Use your own words in your answer.(3 marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;often reflects underlying power dynamics and political agendas&quot;,
+&#10;&#10;⦁	&quot;silencing opposition&quot;,
+&#10;&#10;⦁	&quot;maintaining regime stability&quot;,
+&#10;&#10;⦁	&quot;Dissidents and activists are routinely targeted&quot;,
+&#10;&#10;⦁	&quot;undermines the potential of the internet as a catalyst for social change and political reform.&quot;.
+
+
+&#10;&#10;&#10;5. Explain fully why it's hard to regulate online content in paragraph 7. Use your own words in your answer(2 marks).
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;an interconnected world where borders are increasingly porous&quot;,
+&#10;&#10;⦁	&quot;What may be considered acceptable in one country may be deemed offensive or illegal in another&quot;,
+&#10;&#10;⦁	&quot;clashes over cultural norms and values&quot;,
+
+
+&#10;&#10;&#10;6. By referring to paragraph 9, explain how the writer's use of language creates an urgent tone.(3 Marks)
+&#10;&#10;⦁	Word choice in &quot;must&quot; helps to create an urgent tone. &quot;must&quot; has connotations of necessity or essential, which makes the reader feel that action has to be taken immediately, creating an urgent tone.
+&#10;&#10;⦁	The writer use word choice in &quot;responsibility&quot; to give the reader a sense of obligation. &quot;Responsibility&quot; connotes duty or accountability, which gives the passage an urgent tone, and makes the reader feel they need to take action.
+&#10;&#10;⦁	In &quot;undue&quot;, word choice is used to convey the urgent nature of the situation. &quot;undue&quot; lets us infer unreasonable, or unwarranted, which creates a urgent tone, and gives the reader a feeling of liability.
+&#10;&#10;⦁	Any other reasonable response.
+
+&#10;&#10;&#10;7. Using your own words, identify how the writer thinks the internet should be in paragraph 9.(4 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;vibrant marketplace of ideas&quot;,
+&#10;&#10;⦁	&quot;diverse perspectives are welcomed and cherished&quot;,
+&#10;&#10;⦁	&quot;transparency, accountability&quot;
+
+&#10;&#10;&#10;8. By referring to the last parahraph, explain how the writer's use of language creates an effective conclusion, linking back to the piece as a whole.(4 Marks)
+&#10;&#10;⦁	The word choice in &quot;undermines&quot; links back to the main theme of internet censorship negatively impacting the experience as a whole. &quot;undermine&quot; has connotations of compromises or degrades, which shows the writer's disapproval of the subject, and relates back to key idea of internet censorship unfavorablly affecting the overall experience.
+&#10;&#10;⦁	The writer's words choice in &quot;unfettered&quot; outlines the ideal situation in which the internet would be governed, and connects back to earlier points in the passage. &quot;unfettered&quot; connotes unrestricted or unimpeded, which relates back to the writer's earlier argument, that ideas and beliefs should not be controlled by the government.
+&#10;&#10;⦁	In &quot;inclusive&quot;, word choice is used to recall back to the writer's earlier point that the internet should be an open and welcoming environment. &quot;inclusive&quot; lets us infer hospitable or inviting, which ties back to prior arguments that the writer made, effectively concluding the passage.
+&#10;&#10;⦁	Word choice in &quot;well-intentioned&quot; links back to the previous point that censorship is not always done out of malice, but sometimes done out of good.&quot;well-intentioned&quot; has connotations of caring or compassionate, which relates back to the former argument that even though internet censorship may be a negative overall, it is not always done for selfish reasons, but sometimes because that person thinks it will protect people.
+&#10;&#10;⦁	Any other reasonable response.
+
+&#10;&#10;&#10;9. Look at both passages.
+&#10;&#10;Both writers agree in their criticism of internet censorship.
+&#10;&#10;Identify three key areas on which they agree. You should support the points you make by referring to important ideas in both passages. Three key areas are needed for the full 5 Marks.(5 Marks)
+
+&#10;&#10;&#10;⦁	Complexity of the Issue: Both passages acknowledge the complexity of the debate surrounding internet censorship.
+
+&#10;&#10;Passage 1: &quot;The tension between censorship and free expression is further compounded by the global nature of the internet.&quot; Demonstrates an acknowledgment of the complexity introduced by the global nature of the internet, which influences the debate on censorship.
+
+&#10;&#10;Passage 2: &quot;The debate over Internet censorship is a reflection of the complex and multifaceted nature of our digital society.&quot; Emphasizes the intricate nature of the debate, indicating an awareness of its complexity.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Ethical Concerns: Both passages raise ethical concerns about the implementation and implications of internet censorship.
+
+&#10;&#10;Passage 1: &quot;Moreover, the arbitrary nature of internet censorship raises troubling questions about its efficacy and ethical implications.&quot;  Highlights concerns regarding the ethical implications of arbitrary censorship decisions.
+
+&#10;&#10;Passage 2: &quot;However, the implementation of Internet censorship raises a myriad of ethical and practical concerns.&quot; Addresses the ethical concerns raised by the implementation of censorship.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Subjectivity of Censorship: Both passages highlight the subjective nature of censorship and its dependence on cultural, political, and historical contexts.
+
+&#10;&#10;Passage 1: &quot;What may be considered acceptable in one country may be deemed offensive or illegal in another, leading to clashes over cultural norms and values.&quot; Suggests that the global nature of the internet exacerbates the subjective nature of censorship decisions.
+
+&#10;&#10;Passage 2: &quot;Furthermore, the notion of censorship is inherently subjective and contingent upon cultural, political, and historical contexts.&quot; Explicitly states the subjective nature of censorship and its dependence on various factors.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Importance of Free Expression: Both passages emphasize the importance of free expression and the open exchange of ideas.
+
+&#10;&#10;Passage 1: &quot;, recognizing that true progress lies not in censorship but in the unfettered exchange of ideas and the cultivation of a truly inclusive online community.&quot;  Conveys the importance of obtaining a society where free speech in unregulated.
+
+&#10;&#10;Passage 2: &quot;The freedom to express oneself, even in the face of opposition or controversy, is a cornerstone of creative expression and intellectual discourse.&quot; Outlines the significance of free expression in fostering new ideas and beliefs.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Role of the Internet: Both passages recognize the transformative role of the internet in facilitating communication and dissemination of information.
+
+&#10;&#10;Passage 1: &quot;In the age of information, the internet stands as humanity's greatest innovation, a virtual agora where ideas flow freely and boundaries blur.&quot; Highlights the internet's role as a platform for the free exchange of ideas.
+
+&#10;&#10;Passage 2: &quot;Moreover, the advent of the digital age has democratized the dissemination of information, empowering individuals to engage in public discourse and hold power to account.&quot; Acknowledges the internet's role in democratizing information dissemination and public discourse.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Need for Balanced Approach: Both passages advocate for a balanced approach to internet censorship that considers both the need for protection and the preservation of individual liberties.
+
+&#10;&#10;Passage 1: &quot;In light of these complexities, it is imperative that we adopt a nuanced approach to internet censorship—one that balances the need for order and security with respect for individual liberties and human rights.&quot; Emphasizes the importance of a nuanced approach that considers both the need for order and security as well as respect for individual liberties.
+
+&#10;&#10;Passage 2: &quot;As we navigate this delicate balance between security and liberty, we must strive to cultivate a culture of critical thinking, responsible citizenship, and ethical engagement in the digital realm.&quot; Highlights the necessity of navigating a delicate balance between security and liberty while promoting critical thinking and responsible citizenship in the digital realm.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+
+            " />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Paper One Answers"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

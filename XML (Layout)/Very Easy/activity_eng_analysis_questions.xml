@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngAnalysisQuestions">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/english_analysis_textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wordChoiceHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Word Choice"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/WordChoice"
+                android:layout_marginTop="2dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="From the passage below, answer the following questions:&#10;
+&#10;&quot;Empathy, the ability to understand and share the feelings of others, is not merely a virtue; it is
+ the cornerstone of human connection and societal cohesion. In a landscape rife with challenges ranging from
+systemic injustice to environmental degradation, empathy serves as the compass guiding us towards collective
+ solutions and a more equitable future.&quot;&#10;&#10;&#10;1. State how the writers
+ use of words choice helps to convey the importance of empathy(4 marks)"/>
+
+
+            <TextView
+                android:id="@+id/imageryHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Imagery"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/ImageryMainBody"
+                android:layout_marginTop="2dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="From the passage below, answer the following questions:&#10;&#10;
+&quot;At its core, empathy compels us to transcend the boundaries of our own experiences and embrace
+ the diverse perspectives of others. It is a transformative force that bridges the chasm of misunderstanding,
+ enabling us to recognize the humanity in every individual, regardless of their background or circumstance.
+ In a world where polarization and prejudice often reign supreme, empathy stands as a formidable antidote,
+ dismantling the barriers that divide us and fostering a culture of inclusivity and acceptance.&quot;&#10;
+&#10;2. Analyse the writer's use of imagery, and explain how it creates the
+ idea of empathy connecting us as humans. (2 marks)"/>
+
+            <TextView
+                android:id="@+id/ToneHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Tone"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/ToneMainBody"
+                android:layout_marginTop="2dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="From the passage below, answer the following questions: &#10;&#10;
+&quot;Moreover, the pervasive influence of mainstream media often perpetuates narratives that
+ prioritize sensationalism over empathy, fostering a culture of apathy and desensitization.
+ The relentless barrage of negative news and divisive rhetoric numbs our collective conscience,
+ rendering us indifferent to the plight of others and undermining the very fabric of empathy that binds us together as a society.&quot;&#10;&#10;3. Explain how the writer's
+ word choice creates a negative tone.(3 marks)"/>
+
+            <TextView
+                android:id="@+id/SentenceStuctureHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Sentence Structure"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/SentenceStructureMainBody"
+                android:layout_marginTop="2dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="From the passage below,asnwer the following questions:&#10;&#10;
+&quot;In the fabric of society, empathy weaves the threads that bind individuals together, fostering understanding,
+ compassion, and collective progress. It is a beacon of light in a world often overshadowed by discord and division.&quot;&#10;&#10;
+4. Explain how the sentence stucture in the passage emphasises the importance of empathy."/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Analysis"
+        android:textColor="@color/rec_title_colour_english"
+        android:fontFamily="@font/josefinsans_medium"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

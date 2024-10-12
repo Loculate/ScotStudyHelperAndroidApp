@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngFiveMarkerQuestions">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/english_analysis_textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PassageOneHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Passage One"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/PassageOneMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="Title: The Illusion of Perfection: Embracing Imperfection in the Digital Age
+
+&#10;In an era dominated by social media feeds curated to perfection and digital filters that promise flawless beauty, the illusion of perfection permeates every facet of our lives, distorting our perception of reality and fostering a culture of unrealistic expectations. As an author, I am compelled to explore the profound impact of the pursuit of perfection in the digital age, and the imperative need to embrace imperfection as a gateway to authenticity and self-acceptance.
+
+&#10;&#10;In the age of Instagram influencers and meticulously crafted online personas, the pressure to present a flawless facade has reached unprecedented heights. From meticulously curated images of idyllic vacations to meticulously staged moments of happiness, social media platforms have become breeding grounds for comparison and self-doubt, perpetuating the myth that perfection is not only attainable but expected.
+
+&#10;&#10;Yet, beneath the veneer of perfection lies a profound sense of insecurity and inadequacy, as individuals strive to measure up to unattainable standards of beauty, success, and happiness. The relentless pursuit of perfection breeds anxiety, depression, and a pervasive sense of discontent, as individuals grapple with the pressure to live up to the idealized versions of themselves that proliferate across digital platforms.
+
+&#10;&#10;Moreover, the culture of perfection perpetuated by social media has profound implications for our collective well-being and sense of self-worth. It fosters a culture of comparison and competition, where individuals measure their worth based on likes, followers, and external validation. The relentless pursuit of perfection erodes our sense of authenticity and self-compassion, as we strive to project an image of flawlessness that is inherently unattainable.
+
+&#10;&#10;In this context, embracing imperfection emerges as a radical act of self-love and empowerment. It is a rejection of the narrow confines of perfectionism and a celebration of the messy, imperfect beauty of the human experience. Embracing imperfection requires us to cultivate a mindset of self-compassion and acceptance, recognizing that our worth is not contingent on external validation or adherence to arbitrary standards of perfection.
+
+&#10;&#10;Moreover, embracing imperfection invites us to cultivate a culture of vulnerability and authenticity, where we can show up as our true selves, unfiltered and unapologetic. It is through embracing our imperfections that we cultivate deeper connections with others, as we let go of the facade of perfection and embrace the messy, imperfect beauty of the human experience.
+
+&#10;&#10;Furthermore, the embrace of imperfection is a powerful catalyst for personal growth and self-discovery. It is through embracing our imperfections that we cultivate resilience and authenticity, as we learn to navigate the inevitable challenges and setbacks of life with grace and humility. Embracing imperfection invites us to lean into discomfort and vulnerability, recognizing that it is through embracing our imperfections that we cultivate deeper connections with others and find meaning and purpose in our lives.
+
+&#10;&#10;Ultimately, embracing imperfection is not about settling for mediocrity or complacency; rather, it is about embracing the full spectrum of the human experience, with all its messy, imperfect beauty. As a world-class author, I am acutely aware of the transformative power of embracing imperfection in shaping hearts and minds. Through the art of storytelling, we have the ability to challenge the myth of perfection and celebrate the messy, imperfect beauty of the human experience.
+
+&#10;&#10;In conclusion, the pursuit of perfection in the digital age is a Sisyphean endeavor that breeds insecurity, anxiety, and discontent. Embracing imperfection is not merely a personal choice but a radical act of self-love and empowerment. It is through embracing our imperfections that we cultivate resilience, authenticity, and deeper connections with others. Let us embrace imperfection as a gateway to authenticity and self-acceptance, celebrating the messy, imperfect beauty of the human experience in all its flawed glory." />
+
+            <TextView
+                android:id="@+id/PassageTwo"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Passage Two"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/PassageTwoMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="Title: Striving for Excellence: The Value of Pursuing Perfection
+
+&#10;In a world inundated with messages advocating for self-acceptance and embracing imperfection, it's important to recognize the inherent value of striving for perfection. As an author, I am compelled to explore the merits of pursuing perfection and challenge the prevailing narrative that imperfection should be celebrated as the norm.
+
+&#10;&#10;The pursuit of perfection is not merely a frivolous endeavor driven by vanity or insecurity; rather, it is a noble pursuit rooted in the desire for excellence and self-improvement. In every aspect of human endeavor, from art to science to athletics, the pursuit of perfection serves as a driving force behind innovation and progress. It is through striving for perfection that we push the boundaries of what is possible and achieve feats that were once deemed unimaginable.
+
+&#10;&#10;Moreover, the pursuit of perfection is a testament to the human capacity for growth and self-mastery. It requires discipline, dedication, and a relentless commitment to excellence. In the face of adversity and setbacks, the pursuit of perfection instills resilience and determination, propelling individuals to overcome obstacles and achieve greatness.
+
+&#10;&#10;Furthermore, the pursuit of perfection fosters a culture of accountability and high standards, both individually and collectively. It challenges us to hold ourselves to the highest possible standards of excellence and push beyond our comfort zones in pursuit of our goals. In doing so, it cultivates a sense of pride and fulfillment in our achievements, knowing that we have given our best effort and pursued excellence with unwavering dedication.
+
+&#10;&#10;Additionally, the pursuit of perfection fosters a culture of continuous improvement and innovation. It encourages us to seek out feedback and embrace constructive criticism as opportunities for growth. By constantly striving to refine our skills and elevate our performance, we contribute to the advancement of our respective fields and drive progress on a societal level.
+
+&#10;&#10;In contrast to the prevailing narrative that imperfection should be celebrated, the pursuit of perfection reminds us of the importance of setting ambitious goals and striving to reach our fullest potential. It is through embracing the challenge of perfection that we unleash our creative potential and achieve feats that inspire awe and admiration.
+
+&#10;&#10;In conclusion, the pursuit of perfection is a noble endeavor that drives innovation, fosters personal growth, and cultivates a culture of excellence. Rather than dismissing perfection as unattainable or undesirable, we should embrace it as a worthy goal that inspires us to reach for greatness in every aspect of our lives. As an author, I challenge the prevailing narrative that imperfection should be celebrated and advocate for the inherent value of striving for perfection as a pathway to excellence and self-fulfillment." />
+
+            <TextView
+                android:id="@+id/Questions"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Questions"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+            android:id="@+id/QuestionsMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="1. Using both passages given, identify three key areas on which they agree. You should support the points you make by referring to important ideas in both
+ passages(5 Marks)"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="5 Marker"
+        android:textColor="@color/rec_title_colour_english"
+        android:fontFamily="@font/josefinsans_medium"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

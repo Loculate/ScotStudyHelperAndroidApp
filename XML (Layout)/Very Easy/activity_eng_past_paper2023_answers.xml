@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.english.EngPastPaper2023Answers">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PassageOneHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Answers"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/PassageOneMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="1. State how the writer's use of language in the first paragraph highlights the autonomous nature of teenagers.(4 Marks)
+
+&#10;&#10;⦁	Word choice in &quot;insatiable curiosity&quot; exemplifies the never ending nature of their intrigue. &quot;insatiable&quot; has connotations of never-ending or unquenchable, and &quot;curiosity&quot; connotes interest, or desire for independence, which demonstrates the large craving for freedom at that age.
+&#10;&#10;⦁	In &quot;yearn for independence&quot; word choice is used to portray the strong desire for autonomy at that age. &quot;yearn&quot; lets us infer want or wish for, which further strengthens the point that teenagers want their own autonomy at that age.
+&#10;&#10;⦁	The writer uses word choice in &quot;pushing boundaries&quot; to express the need that teenagers feel to rebel against rules. &quot;pushing&quot; Has connotations of breaking or disobeying, which demonstrates the rebellious nature of teenagers.
+&#10;&#10;⦁	Worch choice in &quot;crave&quot; display the strong desire teenagers feel towards their own independence. &quot;crave&quot; connotes wish for or want, which suggests that adolescents desire the ablility to make their own decisions.
+&#10;&#10;⦁	Any other reasonable response.
+
+
+&#10;&#10;&#10;2. Identify the writer's use of imagery in paragraph 2, and explain how it depicts the danger of night time.(3 Marks)
+&#10;&#10;⦁	The writer's use of imagery in &quot;Proponents argue that curfews serve as protective shields&quot; depicts the dangers of the night that we must protect our kin from.
+&#10;&#10;⦁	Imagery in &quot;lurking shadows of crime&quot; emphasises the never ending and constant nature of crime at night. Just as how a shadow is always present and following you, so too is crime at night frequently occurring, and always just around the corner.
+&#10;&#10;⦁	In &quot;the siren call of mischief&quot;, imagery is used to demonstrate the rebellious activities teenagers usually partake at night. Just as a siren deceives sailors and leads them into dangers, so too can teenagers be influenced into doing dangerous things they wouldn't normally.
+&#10;&#10;⦁	Any other reasonable response
+
+&#10;&#10;&#10;4. In paragraph 2, using your own words, explain fully how why someone might think to implement a curfew.(3 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;Proponents argue that curfews serve as protective shields&quot;,
+&#10;&#10;⦁	&quot;the statistics seem to favor curfews. Nationwide, more than 80 percent of juvenile offenses take place between 9 o’clock in the morning and 10 o’clock at night &quot;,
+&#10;&#10;⦁	&quot;reduce their exposure to risky situations&quot;.
+
+
+&#10;&#10;&#10;5. From the third paragraph, identify the language techniques used by the writer to emphasize how trust can be created through the use of curfews. (2 marks each)
+&#10;&#10;⦁	Imagery in &quot;Curfews become the threads that weave this delicate fabric of trust.
+&#10;&#10;&quot; conveys the power of curfews regarding the creation of trust. Just like small threads holder together a large piece of fabric, so to do curfews retain trust in a relationship.
+&#10;&#10;⦁	Word choice in &quot;demonstrate responsibility and respect&quot; portrays the trust that adhering to a curfew can bring. &quot;respect&quot; lets us infer appreciation or consideration, which demonstrates how agreeing to a curfew can built trust in a relationship.
+&#10;&#10;⦁	Any other reasonable response
+
+
+&#10;&#10;&#10;6. Summarize the writer's argument in paragraph 4 regarding the disadvantages of setting curfews.(3 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;curfews are stifling&quot;,
+&#10;&#10;⦁	&quot;confine young souls&quot;,
+&#10;&#10;⦁	&quot;trapping them within the walls of conformity&quot;,
+&#10;&#10;⦁	&quot;deserve more freedom&quot;,
+&#10;&#10;⦁	&quot;Perhaps curfews, despite their noble intentions, inadvertently push teens toward rebellion.&quot;
+
+
+&#10;&#10;&#10;7. From paragraph 5 and 6, summarize in your own words how the writer suggests society should approach the issue of curfews and youth autonomy. (4 marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;provided legitimate nighttime activities&quot;,
+&#10;&#10;⦁	&quot;safe spaces for camaraderie, creativity, and connection&quot;,
+&#10;&#10;⦁	&quot;weekends free from temporal shackles, where teens dance under the moon, their laughter echoing through the streets&quot;,
+&#10;&#10;⦁	&quot;fostering open dialogue&quot;,
+&#10;&#10;⦁	&quot;Let us listen to our teens, understand their yearnings, and create spaces where safety and freedom coexist&quot;.
+
+
+&#10;&#10;&#10;8. In the conclusion, explain how the writer's choice of language outlines the complexity of the issue.(3 Marks)
+&#10;&#10;⦁	Word choice in &quot;our collective struggle&quot; stresses the difficulty of finding a balance between your child's safety and their freedom. &quot;struggle&quot; has connotations of challenge or an inabilty to come to a conclusion, which outlines the complexity of the issue and the absence of a singular solution.
+&#10;&#10;⦁	The repitition of the rhetorical questions in &quot;How do we nurture without smothering? How do we protect without imprisoning? &quot; accentuates the challenge experienced when trying to find a solution that both gives your child freedom and independence while keeping them safe. This further depicts the complexity of the topic and trying to find the proper resolution.
+&#10;&#10;⦁	The writer uses word choice in &quot;delicate dance between curfew and freedom&quot; to highlight the thin line between letting your child be independent and putting them in danger. &quot;delicate&quot; connotes fragile or sensitive, which shows that a correct solution is hard to come by and may be different depending on your particular case, demonstrating the sheer complexity of the issue.
+
+
+&#10;&#10;&#10;9. Using your own words,  in the conclusion, explain how the writer feels we should balance trust and safety .(3 Marks)
+&#10;&#10;⦁	Paraphrasing of...
+&#10;&#10;⦁	&quot;must craft a chapter that balances safety and autonomy&quot;,
+&#10;&#10;⦁	&quot;curfews fade into memory, replaced by trust, understanding&quot;,
+&#10;&#10;⦁	&quot;Our task is not to dictate but to guide, not to confine but to empower&quot;.
+
+&#10;&#10;&#10;10.Look at both passages.
+&#10;&#10;Both writers opinions differ on the subject of curfews.
+&#10;&#10;Identify three key areas on which they agree. You should support the points you make by referring to important ideas in both passages.(5 Marks)
+
+&#10;&#10;&#10;⦁	Curfews provide structure and safety:
+
+&#10;&#10;Passage 1: &quot;They shield adolescents from the dark alleys of danger, the siren call of mischief, and the lurking shadows of crime.&quot; states that curfews protect teenagers from the danger of the night.
+
+&#10;&#10;Passage 2: &quot;By mandating a specific time for them to be indoors, curfews act as a protective cocoon. They shield teens from the perils of the night—substance abuse, criminal activity, and risky behavior.&quot; argues that curfews are necessary in order to protect adolescents from themselves.
+
+&#10;&#10;Any other reasonable quote and explanation for this point.
+
+&#10;&#10;&#10;⦁	Curfews foster trust and responsibility:
+
+&#10;&#10;Passage 1: &quot;Moreover, curfews ostensibly foster trust between parents and teens... Parents, in turn, breathe easier, knowing their offspring are tucked safely in bed.&quot; acknowledges that curfews can build trust between a parent and a child.
+
+&#10;&#10;Passage 2: &quot;Trust is a reciprocal currency: parents invest it, and teens earn it. By honoring curfews, adolescents signal their reliability, paving the way for more freedom.&quot; confirms that sticking to curfews can successfully create trust in a parent to child relationship.
+
+&#10;&#10;Any other reasonable point with a quote and explanation from each passage.
+
+
+&#10;&#10;&#10;⦁	Acknowledgment of adolescents' yearning for autonomy:
+
+&#10;&#10;Passage 1: &quot;Teens, they say, deserve more freedom. They yearn for moonlit walks, star-studded conversations, and the thrill of breaking curfews.&quot; demonstrates teenagers strong desires for independence.
+
+&#10;&#10;Passage 2: &quot;They claim that teens should explore life unrestricted, akin to fledgling birds testing their wings.&quot; shows why a teen might not want to start a curfew.
+
+&#10;&#10;Any other reasonable point with a quote and explanation from each passage.
+
+&#10;&#10;&#10;⦁	Recognition of the delicate balance between freedom and safety:
+
+&#10;&#10;Passage 1: &quot;In this twilight zone of choice, society grapples with its own identity. Are we guardians, shielding our fledglings from the night’s chill? Or are we mentors, guiding them toward self-discovery?&quot; conveys the thin line between keeping a child safe and limiting their freedom.
+
+&#10;&#10;Passage 2: &quot;Yet, society isn’t a utopian aviary. It’s a complex ecosystem where rights intersect with responsibilities. Curfews don’t imprison; they guide.&quot; depicts the complicated nature of the discussion behind curfews.
+
+&#10;&#10;Any other reasonable point with a quote and explanation from each passage.
+            " />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Paper Four Answers"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
