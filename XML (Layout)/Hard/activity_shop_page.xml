@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_colour_english"
+    tools:context=".activities.mainpages.ShopPage">
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/big_circular_background"
+        android:backgroundTint="@color/button_colour_english"
+        android:contentDescription="Home"
+        android:scaleType="center"
+        android:src="@drawable/home_icon"
+        android:clickable="true"
+        android:onClick="homeNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shopButtonHome"
+        app:layout_constraintStart_toEndOf="@+id/timerButtonHome" />
+
+    <ImageView
+        android:id="@+id/shopButtonHome"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/pressed_button_colour_english"
+        android:contentDescription="Shop"
+        android:scaleType="center"
+        android:src="@drawable/user_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/timerButtonHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/button_colour_english"
+        android:clickable="true"
+        android:contentDescription="Timer"
+        android:onClick="statsNavigation"
+        android:scaleType="center"
+        android:src="@drawable/stopwatch_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="250dp"
+        android:background="@color/circ_image_border"
+        android:backgroundTint="@color/circ_image_border">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/scot_logo" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/button_colour_home"
+        android:gravity="center"
+        android:hint="Enter username"
+        android:textColor="@color/rec_title_colour_english"
+        android:textColorHint="@color/rec_title_colour_english"
+        android:fontFamily="@font/josefinsans_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/writingLoadingText"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/rec_title_colour_english"
+        android:textSize="25sp"
+        android:fontFamily="@font/josefinsans_lightitalic"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/strongestText"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/josefinsans_medium"
+        android:gravity="center"
+        android:text="Strongest Subject:"
+        android:textColor="@color/rec_title_colour_english"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/strongestDropdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/strongestDropdown"
+        android:spinnerItemStyle="@style/CustomSpinnerItem"
+        android:textAlignment="center"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="@color/button_colour_english"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <Spinner
+        android:id="@+id/weakestDropdown"
+        android:spinnerItemStyle="@style/CustomSpinnerItem"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="@color/button_colour_english"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <TextView
+        android:id="@+id/weakestText"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="Weakest Subject:"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/weakestDropdown"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/HoursStudied"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Hours Studied: "
+        android:textSize="20sp"
+        android:textColor="@color/button_text_colour_english"
+        android:fontFamily="@font/josefinsans_medium"
+        android:background="@drawable/timer_background_shape"
+        android:paddingVertical="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strongestDropdown" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

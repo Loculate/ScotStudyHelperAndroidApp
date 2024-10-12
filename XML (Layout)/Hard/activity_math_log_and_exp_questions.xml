@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.maths.MathLogAndExpQuestions">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/questionScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Questions"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/rec_colour_english"
+                android:backgroundTint="@color/rec_colour_english">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardViewHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/header_background_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:gravity="center"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="Basic Exponentials"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/rec_title_colour_english"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/firstQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/rec_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:paddingHorizontal="30dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:text="1. The otter population on a an island increases by 16% each year. how many full years will it take for the population to double."
+                        android:textColor="@color/text_colour_english"
+                        android:textSize="22sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cardViewHeader" />
+
+                    <TextView
+                        android:id="@+id/firstAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/rec_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:paddingHorizontal="30dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/text_colour_english"
+                        android:textSize="22sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/firstQuestion" />
+
+                    <Button
+                        android:id="@+id/RevealButton"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_background"
+                        android:backgroundTint="@color/button_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:gravity="center"
+                        android:paddingHorizontal="5dp"
+                        android:text="Answer"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text_colour_english"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/firstAnswer" />
+
+                    <Button
+                        android:id="@+id/RegenerateButtonOne"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_background"
+                        android:backgroundTint="@color/button_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:gravity="center"
+                        android:paddingHorizontal="5dp"
+                        android:text="Regenerate"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text_colour_english"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/firstAnswer"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/rec_colour_english"
+                android:backgroundTint="@color/rec_colour_english">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/secondCardViewHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/header_background_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:gravity="center"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="5dp"
+                        android:text="Basic Logarithms"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/rec_title_colour_english"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/secondQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/rec_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:paddingHorizontal="30dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:text="2. log(5)2 + log(5)4"
+                        android:textColor="@color/text_colour_english"
+                        android:textSize="21sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/secondCardViewHeader" />
+
+                    <TextView
+                        android:id="@+id/secondAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/rec_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:paddingHorizontal="30dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/text_colour_english"
+                        android:textSize="22sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/secondQuestion" />
+
+                    <Button
+                        android:id="@+id/secondRevealButton"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_background"
+                        android:backgroundTint="@color/button_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:gravity="center"
+                        android:paddingHorizontal="5dp"
+                        android:text="Answer"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text_colour_english"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/secondAnswer" />
+
+                    <Button
+                        android:id="@+id/RegenerateButtonTwo"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_background"
+                        android:backgroundTint="@color/button_colour_english"
+                        android:fontFamily="@font/josefinsans_medium"
+                        android:gravity="center"
+                        android:paddingHorizontal="5dp"
+                        android:text="Regenerate"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text_colour_english"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/secondAnswer"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Logarithms Questions"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
