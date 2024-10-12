@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.maths.MathsPage"
+    android:background="@color/background_colour_english">
+
+    <ImageView
+        android:id="@+id/roundButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/button_colour_english"
+        android:clickable="true"
+        android:contentDescription="Return"
+        android:onClick="backHomeNavigationMaths"
+        android:scaleType="center"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/NotesAndQuestionsRecView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/background_rec_colour_english"
+        android:backgroundTint="@color/background_rec_colour_english"
+        android:orientation="horizontal"
+        android:paddingVertical="6dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/writingLoadingText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/PracticePaperRecView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_rec_colour_english"
+        android:backgroundTint="@color/background_rec_colour_english"
+        android:orientation="horizontal"
+        android:paddingVertical="3dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PracticePapers" />
+
+    <TextView
+        android:id="@+id/writingLoadingText"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/rec_title_colour_english"
+        android:textSize="25sp"
+        android:fontFamily="@font/josefinsans_lightitalic"
+        app:layout_constraintStart_toEndOf="@+id/roundButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NotesAndQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Notes And Questions"
+        android:textColor="@color/rec_title_colour_english"
+        android:textSize="25sp"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/NotesAndQuestionsRecView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/PracticePapers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Practice Papers"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NotesAndQuestionsRecView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
