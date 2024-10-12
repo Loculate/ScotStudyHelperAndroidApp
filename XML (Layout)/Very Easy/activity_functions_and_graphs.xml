@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.maths.FunctionsAndGraphs">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CompositeFunctionsHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Composite Functions"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/CompositeFunctionsBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="Composite functions are questions where you are asked to solve a function within a function, and will typically appear in the non-calulator paper. When done correctly, these questions can be an easy three marks,
+all that is needed to do is subsitute one function in place of x in the other. &#10;&#10;For example, &quot;Functions f and g are defined on a suitable domain by f(x) = x^2 + 3 and g(x) = x + 1. Find and expression for h(x), which = f(g(x))&quot;&#10;&#10;The
+first step is to sub in g(x) so we get f(x+1). Next, we can continue as we would with a normal function and h(x) = (x + 1)^2 + 3,(Since in this case &quot;x&quot; = (x + 1) and f(x) = x^2 + 3). &#10;&#10;Now we can multiply out the bracket to get
+the final answer of x^2 + 2x + 4." />
+
+            <TextView
+                android:id="@+id/InverseFunctionsHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Inverse Functions"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/InverseFunctionsBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="The main idea of an inverse function is to do the exact opposite of what the original function does. So if f(x) = 2x, which doubles a value, f^-1(x) = 0.5x, which halves a value.&#10;&#10;To figure out the inverse of a function, the first step is to change f(x) for y,
+for example, f(x) = 3x - 1 changes to y = 3x- 1. &#10;&#10;Next, we must change the subject of the function to x, which we can do simply by adding one to both sides then dividing by 3 to get x = y/3 + 1/3. &#10;&#10;The last step, is to again change the x back to f^-1(x), and the y to x. This leaves us with
+a final answer of f^-1(x) = x/3 + 1/3." />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Functions"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

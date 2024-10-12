@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.maths.MatPracticePaperOneAnswers">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/textScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/QuestionsHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Non-Calculator"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/PassageOneMainBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="1. Find the value of 2Log(6)12 - log(6)4 (3 Marks)
+&#10;&#10;= Log(6)144  -log(6)4 •1
+&#10;= log(6)36 (1 Mark) •2
+&#10;= 2 (1 Mark) •3
+
+&#10;&#10;&#10;2. Find the exact value of Sin(120) (3 Marks)
+&#10;&#10;Sin(60) as reference angle •1
+&#10;Sin(60) = √3/2 •2
+&#10;Sin(120) =  √3/2 •3
+
+&#10;&#10;&#10;3. Given that Sin(p) = 3/5, and Sin(q) = 3/ 4, find the exact value of Sin(p - q). (4 Marks)
+&#10;&#10;Cos(p) = 4/5, Cos(q) = √7/4 •1
+&#10;Sin(p - q) = Sin(p) * Cos(q) - Cos(p) * Sin(q) •2
+&#10;Sin(p - q) = 3/5 * √7/4 - 4/5 * 3/4 •3
+&#10;Sin(p - q) = -12+3√7/20 •4
+
+&#10;&#10;&#10;4. P and Q are the points (0, 0) and (8, 4).
+&#10;Find the equation of the perpendicular bisector of PQ (4 Marks)
+&#10;&#10;m = 2 •1
+&#10;Perpendicular m = -1/2 •2
+&#10;Midpoint PQ = (4, 2) •3
+&#10;y = -1/2x •4
+
+&#10;&#10;&#10;5. If f(x) = 3x + 4, find find f⁻¹(x) (3 Marks)
+&#10;&#10;x = 3y + 4
+&#10;x - 4 = 3y •1
+&#10;y = x/3 - 4/3 •2
+&#10;f⁻¹(x) = x/3 - 4/3 •3
+
+&#10;&#10;5.b) Hence, find f(f⁻¹(10)) (1 Mark)
+&#10;&#10;= f(x/3 - 4/3)
+&#10;= f(10/3 - 4/3)
+&#10;= f(6/3)
+&#10;= 6 + 4
+&#10;= 10 •1
+
+&#10;&#10;&#10;6. If Un+1 = P x un + Q and u1 = 10, u2 = 8, u3 = 7, find the value of P and Q. (4 marks)
+&#10;&#10;8 = 10P + Q	Q = 8 - 10P
+&#10;7 = 8P + Q 		Q = 7 - 8p •1
+&#10;8 - 10P = 7 - 8P •2
+&#10;2P = 1
+&#10;P = 1/2 •3
+&#10;Q = 8 - 10(1/2)
+&#10;Q = 3 •4
+
+&#10;&#10;&#10;7.  The equation 7/2x² + (p - 2) - 2p has no real roots. (3 Marks)
+&#10;&#10;find the range of values for p.
+&#10;As no real roots, b² - 4ac is less than 0 •1
+&#10;(p - 2)² - 4 * 7/2 * 2p is less than 0
+&#10;(p² - 4p + 4) - (28p) is less than 0
+&#10;p² - 32p + 4 is less than 0
+&#10;(p - 4)(p + 8) is less than 0 •2
+&#10;-8 is less than p,p is less than 4 •3
+
+&#10;&#10;&#10;8. Show that (x - 1) is a factor of f(x) = x³ + 3x² - x - 3 (2 Marks)
+&#10;&#10;(1)³ + 3(1)² - (1) - 3 = 0•1
+&#10;As f(1) = 0, (x - 1) is a factor •2
+
+&#10;&#10;&#10;9. The function f(x) = 5Cos(x) - 3Sin(x). (3 Marks).
+&#10;&#10;Find f'(x).
+&#10;-5Sin(x) •1 + •2 3Cos(x) •3
+
+&#10;&#10;9. b) Hence, find f'(30°). (2 Marks)
+&#10;&#10;-5Sin(30°) + 3Cos(30°)
+&#10;= -5(1/2) + 3(√3/2) •1
+&#10;= (-5+3√3)/2 •2
+
+&#10;&#10;&#10;10.  A function, f, is defined on R, the set of real numbers, by f(x) = x³ - 3x² - 5.
+&#10;Find the coordinates of the stationary points of f and determine their nature. (6 Marks)
+&#10;&#10;f'(x) = 3x² - 6x = 0  •1
+&#10;3x(x - 2)	x = 0, 2 •2
+&#10;Before 0, m is greater than 0
+&#10;Between 0 and 2, m is less than 0	•3
+&#10;Greater than 2, m is greater than 0 •4
+&#10;Therefore Max SP at (0, -5) •5
+&#10;and Min SP when at (2, -9) •6
+
+&#10;&#10;&#10;11. The straight line function f(x) passes through the point (4, 2).
+&#10;Given that a, the angle between the function and the x axis, = 45°, find an equation for f(x). (3 Marks)
+&#10;&#10;y = mx + c •1
+&#10;y = x + c •2
+&#10;y = x - 2 •3
+
+&#10;&#10;&#10;&#10;Total Marks  - 46
+" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Paper One Answers"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.maths.MathLogAndExp">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ExponentialsHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Exponentials"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/ExponentialsBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="Exponentials are an essential topic in the world of mathamatics. Being able to understand them can put you at a headstart in your exam, and earn you multiple marks if completed correctly
+An exponent represents how many times to use a base number in multiplication. For instance, in the expression (2^3), the base is 2, and it is used 3 times in multiplication: (2 times 2 times 2 = 8). &#10;&#10;This will often pop up in an exam in the form
+&quot;Something increases/decreases by something per something. If the starting amount is something, what will the amount of something be in something&quot; &#10;&#10; for instance, lets look at the example &#10;&#10;&quot;The amount of people in a city increases by 10% per year. If the starting population is 1000, what will
+the population be in 3 years&quot;&#10;&#10;To complete a question like this, there are two methods, one requires time while the other is easier and quicker. The first method is finding the multiplier by doing 1 +/- the percentage divided by 100(+ or - depending on if it's increasing or decreasing), and then times the starting
+ amount by the multiplier. The process is then repeated with the new amount for the amount of time given in the question, for instance, if it stated &quot;In 3 years, we will repeat the process 3 times.&quot;. &#10;&#10;Lets look at the previous example, if the poulation increases by 10% each year, we add 0.1 to 1, giving us
+a multiplier of 1.1, then we times this by 1000(The starting population) and repeat for 3 years.&#10;&#10;Year 1 - 1000 * 1.1 = 1100&#10;Year 2 - 1100 * 1.1 = 1210&#10;Year 3 - 1210 * 1.1 = 1331&#10;&#10;The second, and more simple method, is taking the muiltiplier and raising it to the power of the time given(So for 3 years
+multiplier to the power of 3), which we can then times by the starting population to get the final answer.&#10;&#10;1000 * 1.1^3 = 1331" />
+
+            <TextView
+                android:id="@+id/LogarithmsHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Logarithms"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/LogarithmsBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="Logarithms are a larger part of the exam for higher, and will typically appear in the non-calculator paper, and on rare occasions also the calculator paper. A logarithm answers the question: How many of one number multiply together to make another number? For example, log(3)9  = 2, because 3 multiplied
+by itself twice gives us 9. Logarithms are the inverse of exponentiation. They “undo” the effect of exponentials. If you have an exponential equation like (b^y = x), the logarithm helps you find the value of (y). For instance, if you want to solve (2^y = 8), you can use the logarithm to find that (y = 3), because 2 is multiplied by itself
+3 times to reach 8.&#10;&#10;To add and subtract logarithms together, we must take a slightly different approach because since something like log(2)2 is 1 and log(2)4 = 2, it can be said that 2 = log(2)2 + log(2)2, meaning log(2)4 = log(2)2 log(2)2. This clearly demonstrates that when we want to add logarithms together, we must multiply them, for example log(2)2 + log(2)4
+must be log(2)8. Note that we can only add or subtract logarithms together when the share a base(In this intance 2), otherwise they cannot, for instance log(5)2 + log(6)3 cannot be calculated without a calculator. &#10;&#10;Lets look at the example below, combining all our previous knowledge:&#10;&#10;Log(2)4 + log(2)2&#10;&#10;Since the bases are the same,
+we can begin by multipling them together to get &quot;Log(2)8&quot;, and now we can see that 2 cubed(To the power of 3) equals the value  &quot;8&quot;, which gives us an answer of 3.&#10;&#10;Subtracting logs is identical to adding them, only instead of multiplying them we divide them. Lets once again look at the previous example, only tjhis time it's
+&#10;&#10;Log(2)4 - log(2)2&#10;&#10;We can start by dividing 4 by 2 ,since the bases are the same, to get Log(2)2. Since 2 multiplies by itself once to get 2, the answer is simply 1." />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Logarithms"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

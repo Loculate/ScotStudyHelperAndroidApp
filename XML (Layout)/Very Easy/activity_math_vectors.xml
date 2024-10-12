@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.maths.MathVectors">
+
+    <include layout="@layout/shared_simple_layout"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scroll_colour_english"
+        android:backgroundTint="@color/scroll_colour_english"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Collinearity"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Collinearity"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/CollinearityBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="In mathematics, collinearity is a term used to describe certain types of points. For points to be colinear they must meet two criteria, &#10;&#10;1. They must be parallel, which means they
+are multiples of the same vector, for example vectors i and 2i are parallel.&#10;&#10;2. They must also share a common point.&#10;&#10;Lets look at the example below, commonly a question will ask you to prove wether points are or are not colinear,
+for example &quot;Since A(-2, -2), B(0, 0), C(4, 4)  Prove that the vectors AB and BC are colinear&quot; &#10;&#10;The first step is to find vecors AB and BC, which we can do by using AB = b - a and BC = c - b. Now we have both vectors, and we can see that 2AB = BC(Since
+BC is two times bigger, and therefore we need two AB to equal one BC). &#10;&#10;The last step is to state that the points are colinear, for instance, &#10;&#10;&quot;• As 2AB = BC, the vectors are parallel.&#10;&#10;• As they also share a common point, they are colinear.&quot;" />
+
+            <TextView
+                android:id="@+id/LineRatioHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Line Ratios"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/LineRatioBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="Line ratios are closely related to collinearity, in that we also must find the difference in size between two vectors.&#10;&#10;Once we have the difference in size we can then figure out some other information using algebra.&#10;&#10; For example lets look
+at the question below using using the same points as last time, but this time without the point b.&#10;&#10;&quot;Since its known that A(-2, -2), C(4, 4) and B divides the two points in the ratio 1:2, find the coordinates of b&quot;&#10;&#10;We can first begin by setting out equation to 2AB = BC, (Since
+we know that BC is two times bigger, we need two AB to equal it out.).&#10;&#10;The next step is to simplify to the equation 2(b - a) = (c - b), and then 3b = c + 2a.&#10;&#10;The last step is to sub in our points and then divide by 3 to get out point b, which is (0, 0)." />
+
+            <TextView
+                android:id="@+id/AnglesInVectorsHeader"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="30dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:gravity="center"
+                android:background="@color/header_background_colour_english"
+                android:text="Angles In Vectors"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/rec_title_colour_english"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/AnglesInVectorsBody"
+                android:layout_marginTop="0dp"
+                android:background="@color/text_background_colour_english"
+                style="@style/EnglishScrollableViews"
+                android:text="The lasts section of vectors is when you may be asked to find the angle between vectors, and can be found using the formula a.b = │a│ * │b│ * Cos(θ).&#10;&#10;These will appear mostly on calculator papers but also occasionally on non-calculator papers, and are relatively simple. Lets look at the example below:&#10;&#10;
+&quot;Find the angle between vectors A(3, 4) and B(-2, 5)&quot;&#10;&#10;Since we need both the magnitudes and dot product of the vectors, we can calculate the dot product from a.b = (3 * -2) + (4 * 5), and hence a.b = 14&#10;&#10;To find the magnitudes, we can use │a│ = √((3)² + (4)²), and │b│ = √((-2)² + (5)²), and so │a│ = 5, and │b│ = √29.&#10;&#10;The final step
+is to put all of this information into he aforementioned formula to get θ = Cos⁻¹(14/5√29), and therefore θ = 59°." />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/roundIcon"
+        android:text="Vectors"
+        android:fontFamily="@font/josefinsans_medium"
+        android:textColor="@color/rec_title_colour_english"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/header_background_colour_english"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

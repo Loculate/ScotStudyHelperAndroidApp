@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/topic_rec_background"
+    android:padding="15dp"
+    android:layout_marginHorizontal="5dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            app:cardCornerRadius="250dp"
+            app:cardBackgroundColor="@color/rec_image_border">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center">
+
+                <ImageView
+                android:id="@+id/topicImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="Analysis"/>
+
+                </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/Notes"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/button_colour_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:fontFamily="@font/josefinsans_medium"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_colour_english"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/Questions"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/button_colour_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Questions"
+            android:fontFamily="@font/josefinsans_medium"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_colour_english"
+            android:gravity="center"
+            android:textSize="17sp"/>
+</LinearLayout>
